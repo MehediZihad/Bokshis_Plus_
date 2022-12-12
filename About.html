@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+    <title>About</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url(styles.css);
+    </style>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table td,
+        .table th {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .table th {
+            background-color: coral;
+            color: #ffffff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        /*responsive*/
+
+        @media(max-width: 500px) {
+            .table thead {
+                display: none;
+            }
+
+            .table,
+            .table tbody,
+            .table tr,
+            .table td {
+                display: block;
+                width: 100%;
+            }
+
+            .table tr {
+                margin-bottom: 15px;
+            }
+
+            .table td {
+                text-align: right;
+                padding-left: 50%;
+                text-align: right;
+                position: relative;
+            }
+
+            .table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="img/Bokshis logo_2.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log_in.html">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Career.html">Career</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping bag"></i>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+    <section id="about" class="container text-center mt-5 py-5">
+        <h3> Bokshis Plus</h3>
+    </section>
+    <p>
+        Bokshis Plus is Online based shopping store. Our store has also three branches of physical location. The purpose
+        of store is to engage more with our local community. We take online order. And we have home delivery and store
+        pick up option for the customer convenience. Young generation is our intended audience. Our sites give
+        comfortable shopping zone for young generation. Our sites include various types of shopping and fashion
+        materials.
+    </p>
+    <table class="table">
+
+        <thead>
+            <tr>
+                <td colspan="3">Our Branches</td>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+                <th>Branch No</th>
+                <th>City</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Branch No">1</td>
+                <td data-label="City">Hamtramck</td>
+                <td data-label="Location"><a href="https://goo.gl/maps/4NckCQuusUFvk1ww6">11200 Moran St, Hamtramck, MI,
+                        48212</a></td>
+
+            </tr>
+
+            <tr>
+                <td data-label="Branch No">2</td>
+                <td data-label="City">Warren</td>
+                <td data-label="Location"><a href="https://goo.gl/maps/9akoQoBW6FVdD8b4A">4214 E 10 Mile Rd, Warren, MI
+                        48091</a></td>
+
+            </tr>
+            <tr>
+                <td data-label="Branch No">3</td>
+                <td data-label="City">Troy</td>
+                <td data-label="Location"><a href="https://goo.gl/maps/TdyWnTjNr1cw9gEb7">3501 W Maple Rd Ste A, Troy,
+                        MI 48084</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="mt-5 py-5" class="container">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-4 col-md-6 col-12">
+                <img src="img/Bokshis logo_2.png" alt="">
+                <p><br>
+                    Value with money. We earn trust.<br> Shop with Bokshis Plus.<br> Your most comfortable shop.
+                </p>
+            </div>
+            <div class="footer-one col-lg-4 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">Boys</a>
+                    </li>
+                    <li>
+                        <a href="#">Girls</a>
+                    </li>
+                    <li>
+                        <a href="#">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#">Shoes</a>
+                    </li>
+                    <li>
+                        <a href="#">Cloths</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer-one col-lg-4 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>
+                        <a href="https://goo.gl/maps/4NckCQuusUFvk1ww6">11200 Moran St, Hamtramck, MI, 48212</a>
+                    </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p><a href="mailto: bikshis@outlook.com">contact@bokshis.com</a></p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p><a href="tel:(313) 323-9911">Call us at (313) 323-9911</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto"></div>
+            <div class="text-center">
+                <p> Bokshis Plus &copy; 2022 | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
